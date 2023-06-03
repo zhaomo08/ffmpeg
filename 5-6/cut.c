@@ -5,6 +5,8 @@
 #include <libavutil/avutil.h>
 #include <libavformat/avformat.h>
 
+//  截取 视频  2 秒到五秒
+//  ./cut /Users/mesay/Downloads/kyrie_Irving.mp4 2.mp4 2 5
 int main(int argc, char* argv[]){
 
     // 1. 处理一些参数, 
@@ -161,6 +163,7 @@ int main(int argc, char* argv[]){
             break;
         }
         
+
 
         if (stream_map[pkt.stream_index] < 0 ){
             av_packet_unref(&pkt);
