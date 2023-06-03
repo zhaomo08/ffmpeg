@@ -4,6 +4,9 @@
 #include <libavutil/avutil.h>
 #include <libavformat/avformat.h>
 
+// 重新封装格式     
+//  ./remux /Users/mesay/Downloads/kyrie_Irving.mp4 1.mp4/1.mov
+
 int main(int argc, char* argv[]){
 
     // 1. 处理一些参数, 
