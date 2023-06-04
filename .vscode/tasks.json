@@ -12,7 +12,7 @@
 				"${file}",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}",
-				"`pkg-config --libs --cflags libavutil libavformat`"
+				"`pkg-config --libs --cflags libavutil libavformat libavcodec libswscale`"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

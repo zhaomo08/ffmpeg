@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "log.h": "c"
+        "log.h": "c",
+        "avcodec.h": "c",
+        "opt.h": "c"
     }
 }
