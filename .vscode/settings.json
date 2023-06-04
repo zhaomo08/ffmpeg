@@ -2,6 +2,10 @@
     "files.associations": {
         "log.h": "c",
         "avcodec.h": "c",
-        "opt.h": "c"
+        "opt.h": "c",
+        "stdio.h": "c",
+        "sdl.h": "c",
+        "avformat.h": "c",
+        "avutil.h": "c"
     }
 }
