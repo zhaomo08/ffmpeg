@@ -42,6 +42,9 @@ int main(int argc,char *argv[]){
 
     SDL_Delay(30000);
 
+
+    SDL_DestroyRenderer(render);
+
   
     
 _DWINDOW:

@@ -55,7 +55,7 @@ int main(int argc,char *argv[]){
         }
     }while (quit);
 
-    
+    SDL_DestroyRenderer(render);
 
     // SDL_Delay(30000);
 
