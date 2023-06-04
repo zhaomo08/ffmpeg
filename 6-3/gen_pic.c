@@ -6,6 +6,9 @@
 #include <libavcodec/avcodec.h>
 #include <libswscale/swscale.h>
 
+
+// ./gen_pic ../test.mp4 out
+
 #define WORD uint16_t
 #define DWORD uint32_t
 #define LONG int32_t
@@ -110,7 +113,7 @@ static int decode(AVCodecContext *ctx,
     ret = avcodec_send_packet(ctx, pkt);
     if(ret < 0) {
         av_log(NULL, AV_LOG_ERROR, "Failed to send frame to decoder!\n");
-        goto _END;
+        goto _END; 
     }
 
     while( ret >= 0){
@@ -123,7 +126,7 @@ static int decode(AVCodecContext *ctx,
         snprintf(buf, sizeof(buf), "%s-%lld.bmp", fileName, (long long)pkt->pts);
 
         saveBMP(swsCtx, frame, 640, 360, buf);
-        /*
+        /*  这里没做改变前 保存黑白图片
         savePic(frame->data[0],
                 frame->linesize[0],
                 frame->width,
